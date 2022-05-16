@@ -4,7 +4,8 @@ import { ContinentView } from '../ContinentView/ContinentView';
 import { CountriesList } from '../CountriesList';
 import { Filter } from '../Filter';
 import { LanguageView } from '../LanguageView/LanguageView';
-import { SearchBar } from '../SearchBar'
+import { NavBar } from '../NavBar';
+
 
 
 
@@ -12,7 +13,7 @@ export const AppRouter = () => {
 
   return (
       <BrowserRouter>
-       <SearchBar/>
+       <NavBar/>
        <Filter/>
        
        <Routes>
