@@ -1,11 +1,12 @@
 import React, { useContext, useState } from 'react';
-import { CountryContext } from './CountryContext';
+import { CountriesContext } from './context/CountriesContext';
+
 
 export const SearchBar = () => {
 
  const [search, setSearch] = useState("");
 
- const {setInput} = useContext(CountryContext);
+ const {setInput} = useContext(CountriesContext);
 
   const handleChange =(e)=>{
   e.preventDefault()
