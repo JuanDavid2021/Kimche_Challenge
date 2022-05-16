@@ -4,7 +4,8 @@ import { ContinentView } from '../ContinentView/ContinentView';
 import { CountriesList } from '../CountriesList';
 import { Filter } from '../Filter';
 import { LanguageView } from '../LanguageView/LanguageView';
-import { SearchBar } from './SearchBar';
+import { SearchBar } from '../SearchBar'
+
 
 
 export const AppRouter = () => {
