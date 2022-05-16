@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { CountriesContext } from '../context/CountriesContext';
-import { CardLenguaje } from './CardLenguaje';
+import { LanguageCard } from './LanguageCard';
 
 export const LanguageView = () => {
 
@@ -10,7 +10,7 @@ export const LanguageView = () => {
     <div>
      {
       dataFilter.map(countries=>(
-        <CardLenguaje key={countries.code} {...countries}/>  
+        <LanguageCard key={countries.code} {...countries}/>  
       ))
      }
     </div>
