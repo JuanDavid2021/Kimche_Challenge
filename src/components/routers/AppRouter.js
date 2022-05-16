@@ -6,11 +6,6 @@ import { Filter } from '../Filter';
 import { LanguageView } from '../LanguageView/LanguageView';
 import { NavBar } from '../NavBar';
 
-
-
-
-
-
 export const AppRouter = () => {
 
   return (
