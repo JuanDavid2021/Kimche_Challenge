@@ -1,0 +1,30 @@
+.filter{
+ height:6rem; 
+ display: flex;
+ align-items: center;
+ justify-content: center;  
+}
+
+.filter button{
+  margin-left: 20px;
+  text-decoration:none;
+  font-size: 20px;
+  border-radius: 3px;
+  text-align: center;
+  width:200px;
+}
+
+.filter button:hover{
+  cursor:pointer;
+  background-color: #0a0a3c;
+  color:white; 
+}
+
+.filter label{
+    font-size: 50px;
+}
+
+.filter button Link{
+  text-decoration: none;
+  text-align: center;  
+}

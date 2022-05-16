@@ -1,6 +1,7 @@
 import React from 'react'
-import { SearchBar } from './SearchBar'
+
 import "../styles/NavBar.css"
+import { SearchBar } from './Searchbar'
 
 export const NavBar = () => {
 

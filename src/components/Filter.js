@@ -1,13 +1,14 @@
 import React from 'react'
 import {Link} from "react-router-dom"
+import "../styles/Filter.css"
 
 export const Filter = () => {
     return (
-    <div>
+    <div className='filter'>
      <label>Group by:</label>
-     <button><Link to="/continent">Continent</Link></button>
-     <button><Link to="/language">"Language</Link></button>
-     <button><Link to="/">HomePage</Link></button>
+     <Link to="/continent"><button>Continent</button></Link>
+     <Link to="/language"><button>Language</button></Link>
+     <Link to="/"><button>HomePage</button></Link>
     </div>
   )
 }
