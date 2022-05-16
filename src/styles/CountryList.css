@@ -1,0 +1,28 @@
+.list{
+ display:grid;
+ grid-template-columns: 40% 40%;   
+ padding-left: 300px;
+}
+
+.boton{
+ width:200px;
+ border-radius: 3px;
+ padding:10px;
+ margin-bottom: 10px;
+ background-color: rgba(255, 200, 0, 0.516);  
+}
+
+.boton:hover{
+  cursor:pointer;
+  background-color: rgba(9, 163, 184, 0.507);
+  color:black
+}
+
+.less{
+  text-align:justify;  
+}
+
+.more{
+text-align:right;
+margin-right: 90px;    
+}
