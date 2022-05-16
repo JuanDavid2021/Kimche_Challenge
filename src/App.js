@@ -1,15 +1,17 @@
 import React from "react";
-import { AppRouter } from "./components/routers/Approuter";
-
+import { CountriesProvider } from "./components/context/CountriesContext";
+import { AppRouter } from "./components/routers/AppRouter";
+import {client} from "./client"
+import { ApolloProvider } from "@apollo/react-hooks";
 
 const App = () => (
 
 <ApolloProvider client={client}>
- <CountryProvider>
+ <CountriesProvider>
   <React.StrictMode>
   <AppRouter/>
   </React.StrictMode>
- </CountryProvider>
+ </CountriesProvider>
 </ApolloProvider>
 );
 
