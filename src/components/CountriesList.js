@@ -30,7 +30,7 @@ return(
        null) : (
       <div className='more'>   
       <button onClick={showMoreItems} className="boton">
-        See more
+        More
       </button>
       </div> 
        )}
@@ -38,7 +38,7 @@ return(
     {arrCountries.length > 13 && (
       <div className='less'>
         <button onClick={showLessItems} className="boton">
-          See less
+          Less
         </button>
       </div>)}
 </div>
