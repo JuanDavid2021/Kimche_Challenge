@@ -26,24 +26,29 @@ query countriesAll{
 `;
 export const CountriesProvider = (props)=>{
 
-const [input, setInput] =useState("");
+  const [inview, setInview] = useState(12);
+    
+  const [input, setInput] = useState("");
 
-const {data, loading, error} = useQuery(LIST_COUNTRIES);
+  const {data, loading, error} = useQuery(LIST_COUNTRIES);
 
-if(loading) return <div style={{textAlign:"center", marginTop:"200px"}}><BeatLoader/></div>
+  if(loading) return <div style={{textAlign:"center", marginTop:"200px"}}><BeatLoader/></div>;
 
-else if(error) return <p >error</p>;
+  else if(error) return <p >error</p>;
 
-const dataFilter = data.countries.filter(countries=>countries.name.toLowerCase().includes(input.toLowerCase()));
- 
-    return (
-        <CountriesContext.Provider
-        value={{
-        dataFilter,
-        setInput
-         }}
-        >
-        {props.children}    
-        </CountriesContext.Provider>
-    )
-};
+  const dataFilter = data.countries.filter(countries=>countries.name.toLowerCase().includes(input.toLowerCase()));
+
+  let arrCountries = dataFilter?.slice(0,inview);  
+
+  return (
+    <CountriesContext.Provider
+      value={{
+      dataFilter,
+      setInput,
+      setInview,
+      arrCountries,
+      }}
+      >
+      {props.children}    
+    </CountriesContext.Provider>
+  )};

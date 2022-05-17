@@ -1,22 +1,55 @@
+.btn{
+  display: block;
+  margin-top: 20px;
+  text-align: center;  
+}
+
+.btn button{
+  border-radius:5px
+}
+
+.btn button:hover{
+  background-color: #0a0a3c;
+  color:white; 
+  cursor:pointer;
+}
+  
 .country{
-background-image: url("../assets/mapamundi.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-margin-bottom:50px;
-width: 400px;
-height:250px;
-border-radius: 20px;
-box-shadow: 0px 0px 3px 0px rgba(7, 0, 0, 0.8);
-color:white;
+  background-image: url("../assets/mapamundi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px 0px rgba(7, 0, 0, 0.8);
+  color:white;
+  height:250px;
+  margin-bottom:50px;
+  width: 400px;
 }
 
 .country:hover{
-cursor:pointer;
-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
-transform:scale(1.05);
-transition:0.6s;
-
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+  cursor:pointer;
+  transform:scale(1.05);
+  transition:0.6s;
 }
+
+.countryInfo{
+  margin-top: -10px;
+  margin-left: 120px;   
+  text-align: center; 
+  }
+
+.countryInfo h6{
+  text-align: start;   
+ }
+
+.customModal {
+  border-radius: 10px;
+  font-size: 30px;
+  max-width: 300px;
+  text-align: center;
+  width: 80%;
+}  
 
 .data{
   display:flex;
@@ -27,39 +60,25 @@ transition:0.6s;
   margin:30px;  
 }
 
-.countryInfo{
-text-align: center; 
-margin-top: -10px;
-margin-left: 120px;   
-}
-
-.countryInfo h6{
- text-align: start;   
-}
-
-.btn{
-  display: block;
-  text-align: center;  
-  margin-top: 20px;
-  
-}
-
-.btn button{
-  border-radius:5px
-}
-
-.btn button:hover{
-    cursor:pointer;
-    background-color: #0a0a3c;
-    color:white; 
+@media (max-width:425px){
+  .country{
+    width: 300px;
   }
+}
 
+@media (min-width:425px) and (max-width:768px){
+  .country{
+    width: 300px;
+    margin-left: -100px;
+  }
   .customModal {
-    max-width: 500px;
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 30px;
+    max-width: 100px;
   } 
-
+}
   
+@media (min-width:768px) and (max-width:1024px){
+  .country{
+    width: 350;
+    height:250px;
+    }
+}
