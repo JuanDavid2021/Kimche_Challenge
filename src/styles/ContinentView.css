@@ -1,0 +1,10 @@
+.continent{
+display:grid;
+grid-template-columns: 40% 40%;   
+padding-left: 300px;
+}
+
+.continent h2{
+ text-align: center;
+ margin-right:15%   
+}
