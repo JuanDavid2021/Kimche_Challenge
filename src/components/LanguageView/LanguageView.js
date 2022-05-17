@@ -23,10 +23,10 @@ export const LanguageView = () => {
 
   return (
     <div className='continent'>  
-   {arrCountries.length===0 ? <p>Por favor busca un pais </p> : arrCountries.map(countries=>(
+   {arrCountries.length===0 ? <p>no results were found with the name of the country entered </p> : arrCountries.map(countries=>(
 
    <div>
-   <h2>{countries.languages.map(l=>l.name +" ")}</h2>
+   <h2 style={{fontWeight:"bold"}}>{countries.languages.map(l=>l.name +" ")}</h2>
    <Country key={countries.code} {...countries}/> 
    </div>))}
 
