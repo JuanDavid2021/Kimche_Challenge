@@ -3,15 +3,13 @@ import { CountriesProvider } from "./components/context/CountriesContext";
 import { AppRouter } from "./components/routers/AppRouter";
 import {client} from "./client"
 import { ApolloProvider } from "@apollo/react-hooks";
-import { Modal, ModalW } from "./styles/Modal";
-
 
 const App = () => (
 
 <ApolloProvider client={client}>
  <CountriesProvider>
   <React.StrictMode>
-  <AppRouter/>
+    <AppRouter/>
   </React.StrictMode>
  </CountriesProvider>
 </ApolloProvider>
