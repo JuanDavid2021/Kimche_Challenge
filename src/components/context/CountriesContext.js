@@ -1,7 +1,7 @@
 import {useQuery } from "@apollo/react-hooks";
 import { gql} from "apollo-boost";
 import React, { createContext, useState} from "react"; 
-
+import { BeatLoader } from "react-spinners";
 
 export const CountriesContext = createContext();
 
@@ -30,9 +30,9 @@ const [input, setInput] =useState("");
 
 const {data, loading, error} = useQuery(LIST_COUNTRIES);
 
-if(loading) return <p>loading...</p>;
+if(loading) return <div style={{textAlign:"center", marginTop:"200px"}}><BeatLoader/></div>
 
-else if(error) return <p>error</p>;
+else if(error) return <p >error</p>;
 
 const dataFilter = data.countries.filter(countries=>countries.name.toLowerCase().includes(input.toLowerCase()));
  
