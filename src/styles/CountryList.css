@@ -13,7 +13,7 @@
 }
 .btn-end{
   display:flex;
-  margin-left:40%;
+  margin-left:-270px;
 }
 
 .less{
@@ -41,20 +41,20 @@
   }
 }
 
-@media (min-width:425px) and (max-width:768px){
+@media (min-width:425px) and (max-width:767px){
   .boton{
-    margin-left: -120px; 
+    margin-left: 140px; 
     width:100px;
   }
   .less{
-    margin-left: 40px;  
+    margin-left: -170px;  
   }
   .list{
     grid-template-columns: 50%;   
     padding-left: 150px;
   }
   .more{
-    margin-right: 90px;    
+    margin-left: 50px;    
   }
 }
 
@@ -66,6 +66,10 @@
   .list{
     grid-template-columns: 40% 40%; 
     justify-content: space-between;
+    margin-left: -130px;
+  }
+  .less{
+    margin-left: 60px;  
   }
 }
     
