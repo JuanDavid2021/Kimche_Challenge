@@ -1,0 +1,31 @@
+*{
+ margin:0   
+}
+
+body{
+  font-family: 'Raleway', sans-serif; 
+}
+.fund{
+  align-items: center;
+  background-color: #0a0a3c;
+  display:flex;
+  height:5rem; 
+  justify-content: space-evenly;
+}
+
+.letter{
+  color:white;
+  font-size: 50px;
+}
+
+@media (max-width:768px){
+.letter{
+  font-size: 20px;
+  }
+
+.fund{
+  margin-right: 0; 
+  width:100vw;
+  }
+
+}

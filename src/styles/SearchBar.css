@@ -1,0 +1,11 @@
+.search{
+  border-radius: 5px;  
+  height:2.5rem;
+  width:30rem;
+}
+
+@media (max-width:768px){
+  .search{
+    width:16rem;
+  }
+}
