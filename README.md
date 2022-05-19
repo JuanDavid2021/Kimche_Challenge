@@ -2,7 +2,7 @@
 
 Nombre postulante:           Juan David Rodriguez Lopez
 
-Link a la app en producción: https://kimche-challenge-eight.vercel.app/
+Link a la app en producción: https://kimche-challenge-theta.vercel.app/
 
 ## Instrucciones
 
