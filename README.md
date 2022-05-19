@@ -1,7 +1,8 @@
 # Desafío para Software Engineers
 
-Nombre postulante: [TU NOMBRE]
-Link a la app en producción: [LINK DEL DEPLOY]
+Nombre postulante:           Juan David Rodriguez Lopez
+
+Link a la app en producción: https://kimche-challenge-eight.vercel.app/
 
 ## Instrucciones
 
@@ -9,31 +10,37 @@ Debes crear un buscador de países consultando el [siguiente grafo](https://coun
 
 Se espera que logres hacer una aplicación parecida a la del siguiente diagrama:
 
-![image1](imgs/1.png)
-![image2](imgs/2.png)
+![1](https://user-images.githubusercontent.com/87767241/169153882-21f7df4b-b5ef-4546-91a2-4a4695dee68b.png)
 
 La funcionalidad y estructura debe ser igual, pero el diseño y variantes (por ejemplo, cambiar colores de las cosas) queda a tu gusto. **Considerar que el ícono al lado del nombre de cada país es el emoji**.
 
-Además de esto, se espera que hagas deploy de tu app en el servicio que desees (Heroku, Netlify, AWS, Github Pages, etc).
 
-## Consideraciones
+## Cómo mejorar la carga de una base de datos Mysql
 
-- Se espera que uses buenas prácticas como gitflow (pull requests y commits), orden del código, estructura, eficiencia, etc.
-- Puedes dejar comentarios de decisiones que tuviste que tomar y del por qué en este repositorio.
-- Se va a considerar un buen diseño de UX/UI.
+1.Determinar la estructura de la base de datos y mejorar las consultas:
 
-## Hints
+-Si se usa select hay que evitar el uso de "*" y se debe indicar los campos indispensables de lo que se necesita.
 
-Acá van algunas cosas que pueden ser útiles (o no 👀):
+-Evitar el uso de Group By, order By y having.
 
-- [Gitignore](https://www.toptal.com/developers/gitignore)
-- [GraphQL](https://www.howtographql.com/)
-- [React](https://es.reactjs.org/)
-- [Styled components](https://styled-components.com/docs/basics)
-- [ApolloClient](https://www.apollographql.com/docs/react/)
-- [Lodash](https://lodash.com/)
-- [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
-- [Commitlint](https://commitlint.js.org/#/)
-- [Eslint](https://eslint.org/)
-- [Eslint airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
-- [Husky](https://www.npmjs.com/package/husky)
+-Utilizar el comando explain para saber como se está realizando la consulta y saber el rendimiento / velocidad para saber donde se pueden corregir las fallas.
+
+-Revisar que los tipos de datos sean los correctos en el diseño de la base de datos, por ejemplo si se va a guardar un número de identificación es más conveniente usar char que varchar ya que este último podría tardar más tiempo en la lectura del dato.
+
+-Evitar campos null ya que requieren más espacio de almacenamiento.
+
+-Se se tiene claridad de los resultados a obtener, limitar la consulta (usando LIMIT).
+
+-Crear un índice para las consultas, con esto se aumenta la velocidad y se optimizan recursos en memoria.
+
+-Si hay tablas muy grandes se pueden dividir en tablas más pequeñas, especialmente si hay datos de consultas que no son tan recurrentes en las consultas.
+
+3.Verificar las variables del sistema de cache, asignando el tamaño adecuado para que se puedan almacenar las consultas de manera eficiente ya que si se tienen tamaños muy grandes se puede ver reflejado en una carga de datos más lenta.
+
+
+4. Elegir un motor de almacenamiento adecuado: si es una aplicación interactiva donde los estudiantes todos los días están haciendo sus actividades sugeriría InnoDB pero si es más informativa donde se usa para consultar información principalmente, optaría por MyISAM.
+
+
+5. Verificar el servidor y aumentar la memoria, también se pueden utilizar varios discos, los cuales se pueden leer en paralelo y aumentar la velocidad de lectura de los datos.
+
+
