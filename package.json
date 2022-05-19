@@ -3,21 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@apollo/react-hooks": "^3.1.5",
+    "@apollo/react-hooks": "^4.0.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "@types/react": "^18.0.9",
     "apollo-boost": "^0.4.9",
     "graphql": "^15.1.0",
     "jsx-runtime": "^1.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-flags": "^0.1.18",
     "react-responsive-modal": "^6.2.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "3.4.1",
-    "react-spinners": "^0.12.0",
-    "tiny-flag-react": "^2.0.2"
+    "react-spinners": "^0.12.0"
   },
   "scripts": {
     "start": "react-scripts start",
