@@ -13,7 +13,7 @@
 }
 .btn-end{
   display:flex;
-  margin-left:-270px;
+  margin-left:200px;
 }
 
 .less{
@@ -43,11 +43,15 @@
 
 @media (min-width:425px) and (max-width:767px){
   .boton{
-    margin-left: 140px; 
+    margin-left: 40px; 
     width:100px;
   }
+  .btn-end{
+    display:flex;
+    margin-left:-150px;
+  }
   .less{
-    margin-left: -170px;  
+    margin-left: -100px;  
   }
   .list{
     grid-template-columns: 50%;   
@@ -60,8 +64,13 @@
 
 @media (min-width:768px) and (max-width:1024px){
   .boton{
-    margin-left: -90px; 
+    margin-left: -100px; 
     width:200px;
+  }
+
+  .btn-end{
+    display:flex;
+    margin-left:100px;
   }
   .list{
     grid-template-columns: 40% 40%; 
@@ -75,7 +84,7 @@
     
 @media (min-width:1024px) and (max-width:1439px){
   .boton{
-    margin-left: 0px; 
+    margin-left: 50px; 
     width:200px;
   }
   .list{

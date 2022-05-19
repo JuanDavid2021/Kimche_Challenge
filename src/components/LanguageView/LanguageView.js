@@ -1,7 +1,6 @@
 import React, { useContext} from 'react';
 import { CountriesContext } from '../context/CountriesContext';
 import { Country } from '../Country';
-import "../../styles/ContinentView.css"
 import "../../styles/CountryList.css"
 import { DataEnd } from '../DataEnd';
 
